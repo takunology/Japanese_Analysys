@@ -1,0 +1,15 @@
+﻿<Window x:Class="Using_MeCab.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Using_MeCab"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="MeCab 起動" HorizontalAlignment="Left" Margin="644,52,0,0" VerticalAlignment="Top" Width="74" Click="MeCab_Open"/>
+        <Label Content="解析結果" HorizontalAlignment="Left" Margin="121,123,0,29" Width="532" x:Name="OutPut"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="121,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="518" x:Name="Submit_Text" Text="解析したい文字"/>
+
+    </Grid>
+</Window>
