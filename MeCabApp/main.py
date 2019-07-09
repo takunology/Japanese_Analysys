@@ -10,7 +10,7 @@ window.geometry("400x300")
 
 #ラベル
 label = tk.Label(window, text="入力")
-label.pack
+label.pack()
 
 #テキストボックス
 textbox = tk.Entry(window)

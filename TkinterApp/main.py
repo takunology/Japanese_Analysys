@@ -1,11 +1,10 @@
 import sys
-import MeCab
 import tkinter as tk
 from tkinter import messagebox as mbox
 
 # GUI 処理
 window = tk.Tk()
-window.title("形態素解析")
+window.title("簡単なアプリ")
 window.geometry("400x300")
 
 #ラベル
@@ -20,12 +19,8 @@ textbox.insert(tk.END,"")
 #ボタン処理
 text = ""
 def On_Click():
-    gui_text = textbox.get()
-    m = MeCab.Tagger("")
-
-    text = m.parse(gui_text)
-
-    mbox.showinfo("入力文字解析", text)
+    text = textbox.get()
+    mbox.showinfo("メッセージタイトル", text)
 
 #ボタン作成
 OK_Button = tk.Button(window, text="入力", command=On_Click)
