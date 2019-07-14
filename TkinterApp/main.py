@@ -1,29 +1,41 @@
 import sys
-import tkinter as tk
-from tkinter import messagebox as mbox
+import tkinter as View
+from tkinter import messagebox as MessageBox 
+from tkinter import font
 
-# GUI 処理
-window = tk.Tk()
-window.title("簡単なアプリ")
-window.geometry("400x300")
+# Tkinter クラスのインスタンス化
+MainWindow = View.Tk()
 
-#ラベル
-label = tk.Label(window, text="入力")
-label.pack
+# ウィンドウのタイトル
+MainWindow.title("ほげほげ")
+# ウィンドウサイズの指定
+MainWindow.geometry("700x400")
+# ウィンドウの最小サイズの指定
+MainWindow.minsize(100,100)
+# ウィンドウの最大サイズの指定
+MainWindow.maxsize(1000,1000)
+# ウィンドウのサイズを固定するか（0 固定, 1 可変）
+MainWindow.resizable(1,1)
 
-#テキストボックス
-textbox = tk.Entry(window)
-textbox.pack()
-textbox.insert(tk.END,"")
+# ラベルの作成
+Label1 = View.Label(MainWindow, text="テストラベル")
+# ラベル内のフォント指定
+font1 = font.Font(family="Helvetica", size=20, weight="bold")
+# ラベルの座標指定
+Label1.place(x=100, y=20)
 
-#ボタン処理
-text = ""
+# 進捗度を表示するステータスバー
+Statusbar = View.Label(MainWindow, text="ステータスが表示されます", borderwidth=2, relief="groove")
+# バーの表示する位置、fill で X軸いっぱいに広げて表示
+Statusbar.pack(side=View.BOTTOM, fill=View.X)
+
+# ボタンを使う
 def On_Click():
-    text = textbox.get()
-    mbox.showinfo("メッセージタイトル", text)
+    text = "クリックされたよ"
+    MessageBox.showinfo("ボタンクリック", text)
 
-#ボタン作成
-OK_Button = tk.Button(window, text="入力", command=On_Click)
-OK_Button.pack()
+Button1 = View.Button(MainWindow, text="クリック", command=On_Click)
+Button1.place(x=180, y=20)
 
-window.mainloop()
+# ウィンドウ GUI を動かすための処理
+MainWindow.mainloop()
