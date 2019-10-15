@@ -1,0 +1,10 @@
+F:\GitHub\Japanese_Analysys\Werewolf_JSON\Werewolf_JSON\bin\Debug\Werewolf_JSON.exe.config
+F:\GitHub\Japanese_Analysys\Werewolf_JSON\Werewolf_JSON\bin\Debug\Werewolf_JSON.exe
+F:\GitHub\Japanese_Analysys\Werewolf_JSON\Werewolf_JSON\bin\Debug\Werewolf_JSON.pdb
+F:\GitHub\Japanese_Analysys\Werewolf_JSON\Werewolf_JSON\bin\Debug\Newtonsoft.Json.dll
+F:\GitHub\Japanese_Analysys\Werewolf_JSON\Werewolf_JSON\bin\Debug\Newtonsoft.Json.xml
+F:\GitHub\Japanese_Analysys\Werewolf_JSON\Werewolf_JSON\obj\Debug\Werewolf_JSON.csprojAssemblyReference.cache
+F:\GitHub\Japanese_Analysys\Werewolf_JSON\Werewolf_JSON\obj\Debug\Werewolf_JSON.csproj.CoreCompileInputs.cache
+F:\GitHub\Japanese_Analysys\Werewolf_JSON\Werewolf_JSON\obj\Debug\Werewolf_JSON.csproj.CopyComplete
+F:\GitHub\Japanese_Analysys\Werewolf_JSON\Werewolf_JSON\obj\Debug\Werewolf_JSON.exe
+F:\GitHub\Japanese_Analysys\Werewolf_JSON\Werewolf_JSON\obj\Debug\Werewolf_JSON.pdb

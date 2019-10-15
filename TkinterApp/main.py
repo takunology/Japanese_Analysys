@@ -35,7 +35,7 @@ def On_Click():
     # ボタンのクリックイベントハンドラ
     text = Textbox1.get()
     MessageBox.showinfo("ボタンクリック", text)
-    Statusbar.set("完了")
+    Statusbar.update
 # ボタンの引数に command を指定してトリガを設定する
 Button1 = View.Button(MainWindow, text="クリック", command=On_Click)
 Button1.place(x=400, y=100)
@@ -43,7 +43,6 @@ Button1.place(x=400, y=100)
 # テキストボックス
 Textbox1 = View.Entry(width=30)
 Textbox1.place(x=200, y=100)
-#Textbox1.pack()
 
 # ウィンドウ GUI を動かすための処理
 MainWindow.mainloop()
