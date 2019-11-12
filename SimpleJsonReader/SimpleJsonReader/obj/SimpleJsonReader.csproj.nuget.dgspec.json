@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\takun\\Documents\\GitHub\\Japanese_Analysys\\SimpleJsonReader\\SimpleJsonReader\\SimpleJsonReader.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\takun\\Documents\\GitHub\\Japanese_Analysys\\SimpleJsonReader\\SimpleJsonReader\\SimpleJsonReader.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\takun\\Documents\\GitHub\\Japanese_Analysys\\SimpleJsonReader\\SimpleJsonReader\\SimpleJsonReader.csproj",
+        "projectName": "SimpleJsonReader",
+        "projectPath": "C:\\Users\\takun\\Documents\\GitHub\\Japanese_Analysys\\SimpleJsonReader\\SimpleJsonReader\\SimpleJsonReader.csproj",
+        "packagesPath": "C:\\Users\\takun\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\takun\\Documents\\GitHub\\Japanese_Analysys\\SimpleJsonReader\\SimpleJsonReader\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\takun\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

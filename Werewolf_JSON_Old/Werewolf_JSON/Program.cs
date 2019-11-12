@@ -12,7 +12,7 @@ namespace Werewolf_JSON
     {
         static void Main(string[] args)
         {
-            string FilePath = "C:/Users/takun/Desktop/werewolfworld-gh-pages/village/example/0.3/server2client/morning.jsonld";
+            string FilePath = @"C:\Users\takun\Desktop\学校用\プログラム設計法\werewolfworld-gh-pages\village\example\0.3\server2client\morning.jsonld";
             var JsonText = File.ReadAllText(FilePath);
             Console.WriteLine(JsonText);
             var CharacterJson = JsonConvert.DeserializeObject<Character>(JsonText);

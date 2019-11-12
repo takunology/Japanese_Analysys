@@ -1,0 +1,11 @@
+C:\Users\takun\Documents\GitHub\Japanese_Analysys\SimpleJsonReader\SimpleJsonReader\bin\Debug\netcoreapp2.1\SimpleJsonReader.deps.json
+C:\Users\takun\Documents\GitHub\Japanese_Analysys\SimpleJsonReader\SimpleJsonReader\bin\Debug\netcoreapp2.1\SimpleJsonReader.runtimeconfig.json
+C:\Users\takun\Documents\GitHub\Japanese_Analysys\SimpleJsonReader\SimpleJsonReader\bin\Debug\netcoreapp2.1\SimpleJsonReader.runtimeconfig.dev.json
+C:\Users\takun\Documents\GitHub\Japanese_Analysys\SimpleJsonReader\SimpleJsonReader\bin\Debug\netcoreapp2.1\SimpleJsonReader.dll
+C:\Users\takun\Documents\GitHub\Japanese_Analysys\SimpleJsonReader\SimpleJsonReader\bin\Debug\netcoreapp2.1\SimpleJsonReader.pdb
+C:\Users\takun\Documents\GitHub\Japanese_Analysys\SimpleJsonReader\SimpleJsonReader\obj\Debug\netcoreapp2.1\SimpleJsonReader.csprojAssemblyReference.cache
+C:\Users\takun\Documents\GitHub\Japanese_Analysys\SimpleJsonReader\SimpleJsonReader\obj\Debug\netcoreapp2.1\SimpleJsonReader.csproj.CoreCompileInputs.cache
+C:\Users\takun\Documents\GitHub\Japanese_Analysys\SimpleJsonReader\SimpleJsonReader\obj\Debug\netcoreapp2.1\SimpleJsonReader.AssemblyInfoInputs.cache
+C:\Users\takun\Documents\GitHub\Japanese_Analysys\SimpleJsonReader\SimpleJsonReader\obj\Debug\netcoreapp2.1\SimpleJsonReader.AssemblyInfo.cs
+C:\Users\takun\Documents\GitHub\Japanese_Analysys\SimpleJsonReader\SimpleJsonReader\obj\Debug\netcoreapp2.1\SimpleJsonReader.dll
+C:\Users\takun\Documents\GitHub\Japanese_Analysys\SimpleJsonReader\SimpleJsonReader\obj\Debug\netcoreapp2.1\SimpleJsonReader.pdb

@@ -364,16 +364,15 @@ namespace Werewolf_JSON
     {
         static void Main(string[] args)
         {
-            string file = "C:/Users/takun/Desktop/werewolfworld-gh-pages/village/example/0.3/server2client/morning.jsonld";
+            string file = @"C:\Users\takun\Desktop\学校用\プログラム設計法\werewolfworld-gh-pages\village\example\0.3\server2client\morning.jsonld";
             DataContractJsonSerializer js = new DataContractJsonSerializer(typeof(Character));
             FileStream fs = new FileStream(file, FileMode.Open);
             //var fs = File.ReadAllText(file);
             //JsonData json = (JsonData)js.ReadObject(fs);
             Character charjson = (Character)js.ReadObject(fs);
             //Role rolejson = (Role)js.ReadObject(fs);
-            fs.Close();
-
             Console.WriteLine("name = {0}", charjson.Name);
+            fs.Close();
             Console.ReadKey();
         }
     }
