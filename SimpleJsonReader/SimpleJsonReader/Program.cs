@@ -11,48 +11,53 @@ namespace SimpleJsonReader
     {
         static void Main(string[] args)
         {
-            string file = @"C:\Users\takun\Desktop\学校用\プログラム設計法\werewolfworld-gh-pages\village\example\0.3\server2client\morning.jsonld";
-            var s = new DataContractJsonSerializer(typeof(Data));
-            var json = File.ReadAllText(file);
+            //string FilePath = @"C:\Users\takun\Desktop\学校用\プログラム設計法\werewolfworld-gh-pages\village\example\0.3\server2client\morning.jsonld";
+            string FilePath = @"C:\Users\takun\Desktop\werewolfworld-gh-pages\village\example\0.3\server2client\morning.jsonld";
+            var serializer = new DataContractJsonSerializer(typeof(JsonData));
+            var json = File.ReadAllText(FilePath);
 
             var ms = new MemoryStream(Encoding.UTF8.GetBytes((json)));
           
-            //s.WriteObject(ms, new Data { Name = "たくのろじぃ" });
+            //serializer.WriteObject(ms, new Data { Name = "たくのろじぃ" });
             //Console.WriteLine(Encoding.UTF8.GetString(ms.ToArray()));
             ms.Seek(0, SeekOrigin.Begin);
-            var data = s.ReadObject(ms) as Data;
-            var data2 = s.ReadObject(ms) as Village;
+            var data = serializer.ReadObject(ms) as JsonData;
+
+            string Status = "";
             Console.WriteLine($"ID : {data.Id}");
+            
             for (int i = 0; i < data.Context.GetLength(0); i++)
             Console.WriteLine($"context{i} : {data.Context[i].ToString()}");
 
-            Console.WriteLine($"{data2.datas}");
+            Console.WriteLine($"Token : {data.Token}");
+            Console.WriteLine($"Phase : {data.Phase}");
+            Console.WriteLine($"Date : {data.Date}");
+            Console.WriteLine($"PhaseTimeLimit : {data.PhaseTimeLimit}");
+            Console.WriteLine($"ServerTimestamp : {data.ServerTimestamp}");
+            Console.WriteLine($"ClientTimestamp : {data.ClientTimestamp}");
 
+            Console.WriteLine();
 
+            for(int i = 0; i < data.Character.GetLength(0); i++) //キャラクター情報の表示
+            {
+                Console.Write($"参加者ID {data.Character[i].CharacterId} : "); //プレイヤーID
+                Console.Write($"{data.Character[i].Name.Ja} ({data.Character[i].Name.En})"); // プレイヤー名
+
+                Status = data.Character[i].Status;
+                if(Status == "alive")
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine($" {data.Character[i].Status}");
+                    Console.ForegroundColor = ConsoleColor.White;
+                }
+                else if(Status == "dead")
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine($" {data.Character[i].Status}");
+                    Console.ForegroundColor = ConsoleColor.White;
+                }
+
+            }
         }
     }
-
-    [DataContract]
-    public class Data
-    {
-        [DataMember(Name = "@context")]
-        public string[] Context { get; set; }
-
-        [DataMember(Name = "@id")]
-        public string Id { get; set; }
-    }
-
-    [DataContract]
-    public class Village
-    {
-        [DataMember(Name = "village")]
-        public object datas { get; set; }
-    }
-
-    /*[DataContract(Name = "village")]
-    public class Village
-    {
-        [DataMember(Name = "name")]
-        public string name { get; set; }
-    }*/
 }
